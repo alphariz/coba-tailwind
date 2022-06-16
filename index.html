@@ -18,73 +18,330 @@
             <div>
               <img src="" alt="Logo" class="h-full p-2 my-auto w-14" />
             </div>
-            <div
-              class="flex flex-col min-w-full my-auto font-semibold text-slate-100"
+            <a
+              href="#home"
+              class="flex flex-col min-w-full my-auto font-semibold text-slate-100 lg:flex-row lg:text-xl"
             >
               <div>STIKes Mahardika</div>
-              <div>Cirebon</div>
-            </div>
+              <div class="lg:ml-1">Cirebon</div>
+            </a>
           </div>
           <!-- End Logo -->
           <!-- Menu List -->
           <!-- Inventaris -->
-          <div class="flex w-full mb-[0.05rem] h-14 bg-slate-500">
-            <div class="mx-2 my-auto w-14">
-              <svg
-                class="w-7 h-7"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
+          <div class="relative group">
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              class="absolute w-full opacity-0 h-14 peer"
+            />
+            <div
+              class="flex w-full border-y border-slate-400 h-14 bg-slate-500 group-hover:bg-sky-600 group-active:bg-sky-800 peer-checked:bg-sky-700 group-hover:border-y group-hover:border-slate-300"
+            >
+              <div class="mx-2 my-auto w-14 fill-slate-100">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M50.73 58.53C58.86 42.27 75.48 32 93.67 32H208V160H0L50.73 58.53zM240 160V32H354.3C372.5 32 389.1 42.27 397.3 58.53L448 160H240zM448 416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V192H448V416z"
+                  />
+                </svg>
+              </div>
+              <div class="w-full pb-1 my-auto text-lg text-slate-100">
+                Inventaris
+              </div>
+            </div>
+            <!-- Sub Menu .................................................... -->
+            <!-- Aset Barang -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#aset_barang"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
               >
-                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path
-                  d="M50.73 58.53C58.86 42.27 75.48 32 93.67 32H208V160H0L50.73 58.53zM240 160V32H354.3C372.5 32 389.1 42.27 397.3 58.53L448 160H240zM448 416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V192H448V416z"
-                />
-              </svg>
+                Aset Barang
+              </a>
             </div>
-            <div class="w-full pb-1 my-auto text-lg text-slate-100">
-              Inventaris
+            <!-- End Aset Barang -->
+            <!-- Kategori Barang -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#kategori_barang"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Kategori Barang
+              </a>
             </div>
+            <!-- End Kategori Barang -->
+            <!-- Supplier Barang -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#supplier_barang"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Supplier Barang
+              </a>
+            </div>
+            <!-- End Supplier Barang -->
+            <!-- End Sub Menu .................................................... -->
           </div>
           <!-- End Inventaris -->
           <!-- Lokasi -->
-          <div class="flex w-full mb-[0.05rem] h-14 bg-slate-500">
-            <div class="mx-2 my-auto w-14">
-              <svg
-                class="w-7 h-7"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path
-                  d="M240.1 4.216C249.1-1.405 262-1.405 271.9 4.216L443.6 102.4L447.1 104V104.9L495.9 132.2C508.5 139.4 514.6 154.2 510.9 168.2C507.2 182.2 494.5 192 479.1 192H31.1C17.49 192 4.795 182.2 1.071 168.2C-2.653 154.2 3.524 139.4 16.12 132.2L63.1 104.9V104L68.37 102.4L240.1 4.216zM64 224H128V416H168V224H232V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H32C17.9 512 5.46 502.8 1.373 489.3C-2.713 475.8 2.517 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 64 420.3V224z"
-                />
-              </svg>
+          <div class="relative group">
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              class="absolute w-full opacity-0 h-14 peer"
+            />
+            <div
+              class="flex w-full border-y border-slate-400 h-14 bg-slate-500 group-hover:bg-sky-600 group-active:bg-sky-800 peer-checked:bg-sky-700 group-hover:border-y group-hover:border-slate-300"
+            >
+              <div class="mx-2 my-auto w-14 fill-slate-100">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M240.1 4.216C249.1-1.405 262-1.405 271.9 4.216L443.6 102.4L447.1 104V104.9L495.9 132.2C508.5 139.4 514.6 154.2 510.9 168.2C507.2 182.2 494.5 192 479.1 192H31.1C17.49 192 4.795 182.2 1.071 168.2C-2.653 154.2 3.524 139.4 16.12 132.2L63.1 104.9V104L68.37 102.4L240.1 4.216zM64 224H128V416H168V224H232V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H32C17.9 512 5.46 502.8 1.373 489.3C-2.713 475.8 2.517 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 64 420.3V224z"
+                  />
+                </svg>
+              </div>
+              <div class="w-full pb-1 my-auto text-lg text-slate-100">
+                Lokasi
+              </div>
             </div>
-            <div class="w-full pb-1 my-auto text-lg text-slate-100">Lokasi</div>
+            <!-- Sub Menu .................................................... -->
+            <!-- Departemen -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#departemen"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Departemen
+              </a>
+            </div>
+            <!-- End Departemen -->
+            <!-- Ruangan -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#ruangan"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Ruangan
+              </a>
+            </div>
+            <!-- End Ruangan -->
+            <!-- End Sub Menu .................................................... -->
           </div>
           <!-- End Lokasi -->
           <!-- Laporan -->
-          <div class="flex w-full mb-[0.1rem] h-14 bg-slate-500">
-            <div class="mx-2 my-auto w-14">
-              <svg
-                class="w-7 h-7"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
+          <div class="relative group">
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              class="absolute w-full opacity-0 h-14 peer"
+            />
+            <div
+              class="flex w-full border-y border-slate-400 h-14 bg-slate-500 group-hover:bg-sky-600 group-active:bg-sky-800 peer-checked:bg-sky-700 group-hover:border-y group-hover:border-slate-300"
+            >
+              <div class="mx-2 my-auto w-14 fill-slate-100">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"
+                  />
+                </svg>
+              </div>
+              <div class="w-full pb-1 my-auto text-lg text-slate-100">
+                Laporan
+              </div>
+            </div>
+            <!-- Sub Menu .................................................... -->
+            <!-- Pengadaan -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#pengadaan"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
               >
-                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path
-                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"
-                />
-              </svg>
+                Pengadaan
+              </a>
             </div>
-            <div class="w-full pb-1 my-auto text-lg text-slate-100">
-              Laporan
+            <!-- End Pengadaan -->
+            <!-- Penempatan -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#penempatan"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Penempatan
+              </a>
             </div>
+            <!-- End Penempatan -->
+            <!-- Mutasi -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#mutasi"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Mutasi
+              </a>
+            </div>
+            <!-- End Mutasi -->
+            <!-- Peminjaman -->
+            <div
+              class="hidden w-full peer-checked:flex h-14 bg-slate-600 hover:bg-sky-900 hover:border-y hover:border-slate-400 active:bg-sky-700"
+            >
+              <div class="w-12 my-auto ml-10">
+                <svg
+                  class="w-4 h-4 rotate-90 fill-slate-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 182.6C336.4 188.9 328.2 192 319.1 192s-16.38-3.125-22.62-9.375L224 109.3V432c0 44.13-35.89 80-80 80H32c-17.67 0-32-14.31-32-32s14.33-32 32-32h112C152.8 448 160 440.8 160 432V109.3L86.62 182.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l127.1-128c12.5-12.5 32.75-12.5 45.25 0l128 128C355.1 149.9 355.1 170.1 342.6 182.6z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#peminjaman"
+                class="w-full pb-1 my-auto text-lg text-slate-100"
+              >
+                Peminjaman
+              </a>
+            </div>
+            <!-- End Peminjaman -->
+            <!-- End Sub Menu .................................................... -->
           </div>
           <!-- End Laporan -->
           <!-- Pengguna -->
-          <div class="flex w-full mb-[0.05rem] h-14 bg-slate-500">
-            <div class="mx-2 my-auto w-14">
+          <div
+            class="flex w-full border-y border-slate-400 h-14 bg-slate-500 hover:bg-sky-600 active:bg-sky-800 hover:border-y hover:border-slate-300"
+          >
+            <div class="mx-2 my-auto w-14 fill-slate-100">
               <svg
                 class="w-7 h-7"
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,9 +353,11 @@
                 />
               </svg>
             </div>
-            <div class="w-full pb-1 my-auto text-lg text-slate-100">
-              Pengguna
-            </div>
+            <a
+              href="#pengguna"
+              class="w-full pb-1 my-auto text-lg text-slate-100"
+              >Pengguna</a
+            >
           </div>
           <!-- End Pengguna -->
           <!-- End Menu List -->
@@ -147,6 +406,11 @@
                       class="w-screen h-12 py-2 text-lg font-semibold text-center border-y text-slate-50 border-slate-50 bg-sky-600 hover:bg-sky-900 active:bg-sky-300 active:text-slate-700"
                     >
                       <a href="#">Kategori Barang</a>
+                    </li>
+                    <li
+                      class="w-screen h-12 py-2 text-lg font-semibold text-center border-y text-slate-50 border-slate-50 bg-sky-600 hover:bg-sky-900 active:bg-sky-300 active:text-slate-700"
+                    >
+                      <a href="#">Supplier Barang</a>
                     </li>
                     <li
                       class="w-screen h-12 py-2 text-lg font-semibold text-center border-y text-slate-50 border-slate-50 bg-sky-600 hover:bg-sky-900 active:bg-sky-300 active:text-slate-700"
